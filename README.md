@@ -21,5 +21,5 @@
 2. Open editor with command `nvim test.py`, then type `:PlugInstall`
 
 3. Close editor and open it again. you should see something like this
-![plot](./img/preview1)
-![plot](./img/preview2)
+![plot](./img/preview1.png)
+![plot](./img/preview2.png)
