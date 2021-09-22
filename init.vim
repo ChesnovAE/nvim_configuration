@@ -17,7 +17,17 @@ Plug 'itchyny/lightline.vim'
 Plug 'itchyny/vim-gitbranch'
 Plug 'tomasiser/vim-code-dark'
 Plug 'neomake/neomake'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 call plug#end()
+
+" CtrlP setup
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co - exclude-standard', 'find %s -type f']
+
+" FZF setup
+nnoremap ff <cmd>Ag<cr>
+nnoremap fd <cmd>FZF<cr>
 
 " Neomake setup
 " When writing a buffer (no delay).
