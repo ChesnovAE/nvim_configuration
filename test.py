@@ -1,3 +1,3 @@
-import random as r
+import random
 
-var = r.randint()
+x = random.randint(1, 1)

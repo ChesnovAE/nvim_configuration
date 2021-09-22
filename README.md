@@ -3,6 +3,7 @@
 ## Features
 - Directories tree
 - Python jedi autocompletions
+- Python linter (pylint)
 - VSCode theme
 - Git branch information
 
