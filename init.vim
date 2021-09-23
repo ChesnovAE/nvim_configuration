@@ -1,10 +1,14 @@
 set encoding=UTF-8
 let g:python3_host_prog="/usr/bin/python3"
+"let g:python3_host_prog = system("which python3")
+"let g:python3_host_prog = "/home/ripper/.cache/pypoetry/virtualenvs/the_mood_of_the_text-LS0m3mdS-py3.8/bin/python3"
 set relativenumber
+set autoindent
 
 " Plugins install
 call plug#begin()
 Plug 'davidhalter/jedi-vim'
+Plug 'jmcantrell/vim-virtualenv'
 Plug 'ervandew/supertab'
 Plug 'tpope/vim-pathogen'
 Plug 'VundleVim/Vundle.vim'
@@ -47,7 +51,7 @@ call neomake#configure#automake('nrw', 50)
 " which linter to enable for Python source file linting
 let g:neomake_python_pylint_maker = {
   \ 'args': [
-  \ '-d', 'C0103, C0111',
+  \ '-d', 'C0103, C0111, C0305',
   \ '-f', 'text',
   \ '--msg-template="{path}:{line}:{column}:{C}: [{symbol}] {msg}"',
   \ '-r', 'n'
