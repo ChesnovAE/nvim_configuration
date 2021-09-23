@@ -4,6 +4,7 @@
 - Directories tree (NERDTree)
 - Python jedi autocompletions (after `.` and with `tab`)
 - Python linter (pylint)
+- Python venv (**install `pylint` in your venv**)
 - VSCode theme (ofcourse dark theme)
 - Git branch information
 - Fuzzy search (`ff` - search in files, `fd` - search files in directory)
