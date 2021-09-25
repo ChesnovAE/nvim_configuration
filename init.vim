@@ -26,6 +26,9 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 call plug#end()
 
+" Terminal mode remap
+tnoremap <Esc> <C-\><C-n>
+
 " CtrlP setup
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co - exclude-standard', 'find %s -type f']
 
